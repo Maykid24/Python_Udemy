@@ -3,13 +3,13 @@ def multiply(x, y):
     return result
 
 
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     # backwards = string[::-1]
     # return backwards == string
     return string[::-1].casefold() == string.casefold()
 
 
-def palindrome_sentence(sentence):
+def palindrome_sentence(sentence: str) -> bool:
     string = ""
     for char in sentence:
         if char.isalnum():
@@ -34,3 +34,5 @@ def palindrome_sentence(sentence):
 
 answer = multiply(18, 3)
 print(answer)
+
+p = palindrome_sentence()
